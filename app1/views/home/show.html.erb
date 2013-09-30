@@ -1,0 +1,16 @@
+<html>
+	<table>
+		<tr><td><th>name</th></td><td><th>email</th></td></tr>
+	<% @user.each do |users|%>
+	<tr>
+		<td><%= users.name%></td>
+		<td><%= users.email%></td>
+		<td style="color:#000;"><%= link_to"edit"%></td>
+		<td><%= link_to "show"%></td>
+		<td><%= link_to "deletess"%></td>
+	</tr>
+		
+
+	<%end%>
+		</table>
+</html>

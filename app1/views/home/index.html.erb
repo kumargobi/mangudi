@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<style>
+			.sign_in_form{
+				background-color:#00CC99;background-radious:10px;
+				height:100px;width:200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sign_in_form">
+			<%=form_tag :controller=>"home",:action=>"create"%>
+<input name="user[name]" value="name">
+<input name="user[email]" value="email">
+<input type="submit" value="submit">
+</form>
+		</div>
+	</body>
+</html>
